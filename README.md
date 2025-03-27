@@ -1,5 +1,5 @@
-# Project Title
-A brief description of what your project does and its purpose.
+# Eye Tracking with OpenCV & MediaPipe
+A Python-based eye-tracking system that uses OpenCV, MediaPipe, and PyAutoGUI to track eye movements and potentially control the mouse cursor.
 
 ## Table of Contents
 - [Overview](#overview)
@@ -11,25 +11,29 @@ A brief description of what your project does and its purpose.
 - [Contact](#contact)
 
 ## Overview
-Provide a more detailed explanation of your project. Mention its main functionalities, the problems it solves, and any relevant background information.
+This project utilizes a webcam feed to track facial landmarks, specifically focusing on eye movements. Using MediaPipe's FaceMesh model, it detects and processes eye movement data in real-time. The script can potentially be used for hands-free cursor control or accessibility applications.
 
 ## Features
-- Feature 1
-- Feature 2
-- Feature 3
+- Real-time face and eye tracking using MediaPipe.
+- Webcam-based tracking with OpenCV.
+- Cursor control with PyAutoGUI based on eye movement.
+- Hands-free navigation potential.
 
 ## Installation
 ### Prerequisites
-List any dependencies or software required before installation.
+Ensure you have Python installed. Then, install the required dependencies:
+```sh
+pip install opencv-python mediapipe pyautogui
+```
 
 ### Steps
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-username/your-repo.git
+   git clone https://github.com/your-username/eye-tracking.git
    ```
 2. Navigate to the project directory:
    ```sh
-   cd your-repo
+   cd eye-tracking
    ```
 3. Install dependencies:
    ```sh
@@ -37,10 +41,11 @@ List any dependencies or software required before installation.
    ```
 
 ## Usage
-Provide instructions on how to use the project. You can include example commands or screenshots.
+To start the eye-tracking system, run:
 ```sh
 python eye.py
 ```
+Make sure your webcam is connected and functioning properly. The script will track eye movements and may control the cursor accordingly.
 
 ## Contributing
 Contributions are welcome! Follow these steps to contribute:
@@ -54,5 +59,5 @@ Contributions are welcome! Follow these steps to contribute:
 Specify the license under which the project is distributed.
 
 ## Contact
-Provide your contact information or links to relevant social profiles (GitHub, LinkedIn, etc.).
+For inquiries, reach out via GitHub or LinkedIn.
 
